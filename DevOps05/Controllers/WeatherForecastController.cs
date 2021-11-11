@@ -35,5 +35,11 @@ namespace DevOps05.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("greeting/{name}")]
+        public IActionResult GreetingAsync(string name)
+        {
+            return Ok($"Hello {name} friend🙌");
+        }
     }
 }
